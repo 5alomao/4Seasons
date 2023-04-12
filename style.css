@@ -1,0 +1,406 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: rgb(53, 43, 43);
+}
+
+
+
+
+/* HEADER (NAVBAR)*/
+header {
+    background-color: #000;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    padding: 20px;
+}
+header h1 {
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+}
+/* FIM HEADER */
+
+
+
+/* INICIO SEASONS */
+.section-home{
+    background-color: rgb(20, 16, 16);
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 70px;
+}
+.section-home div {
+    display: grid;
+    gap: 5px;
+}
+.seasons {
+    padding: 80px;
+}
+.seasons ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(12, 9, 9, 0.712);
+    padding: 60px;
+}
+.seasons ul .primavera {
+    background-color: rgb(48, 161, 48);
+    border-radius: 5px;
+}
+.seasons ul .inverno {
+    background-color: rgb(128, 128, 196);
+    border-radius: 5px;
+}
+.seasons ul .outono {
+    background-color: rgb(112, 74, 4);
+    border-radius: 5px;
+}
+.seasons ul .verao {
+    background-color: rgb(206, 13, 13);
+    border-radius: 5px;
+}
+.seasons ul li a {
+    padding: 20px;
+    width: 150px;
+    height: 150px;
+    gap: 15px;
+    display: grid;
+    align-content: center;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+}
+.seasons ul li i {
+    font-size: 2.7rem;
+    color: #ffffff;
+}
+.seasons ul li h3 {
+    color: #ffffff;
+    font: 1.7rem;
+
+}
+.seasons li a::before {
+    content: '';
+    transition: .5s ease-in-out;
+    border-radius: 6px;
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    border-top: 2px solid transparent;
+    border-right: 2px solid transparent;
+}
+.seasons li a::after {
+    content: '';
+    transition: .5s ease-in-out;
+    border-radius: 6px;
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    bottom: -1px;
+    left: -1px;
+    border-bottom: 2px solid transparent;
+    border-left: 2px solid transparent;
+}
+.seasons li a:hover::before {
+    width: 100%;
+    height: 100%;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+}
+.seasons li a:hover::after {
+    width: 100%;
+    height: 100%;
+    border-bottom: 2px solid #fff;
+    border-left: 2px solid #fff;
+}
+/* FIM SEASONS */
+
+
+
+/* INICIO SUMMER */
+.season-summer {
+    display: inline-block;
+    margin: 0 auto;
+    background-color: rgb(206, 13, 13);
+    margin-top: 10px;
+}
+
+.summer-title {
+    padding: 5px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+
+}
+.summer-title h2 {
+    font-size: 3rem;
+    font-family: cursive;
+}
+
+.summer-title p {
+    font-size: 1.5rem;
+    text-align: center;
+}
+.summer-content {
+    display: grid;
+    padding: 20px;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(236, 102, 102)
+}
+
+.summer-content img {
+    padding: 30px;
+    max-width: 100%;
+}
+
+.summer-text p {
+    color: #020101;
+    justify-content: center;
+    text-align: justify;
+    padding: 20px;
+    font-size: 1rem;
+    font-weight: 400;
+}
+/* FIM SUMMER */
+
+
+
+
+/* INICIO FALL */
+.season-fall {
+    display: inline-block;
+    margin: 10px auto;
+    background-color: rgb(112, 74, 4);
+}
+
+.fall-title {
+    padding: 5px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+
+}
+.fall-title h2 {
+    font-size: 3rem;
+    font-family: cursive;
+}
+
+.fall-title p {
+    font-size: 1.5rem;
+    text-align: center;
+}
+.fall-content {
+    display: grid;
+    padding: 20px;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(236, 198, 116)
+}
+
+.fall-content img {
+    padding: 30px;
+    max-width: 100%;
+}
+
+.fall-text p {
+    color: #020101;
+    justify-content: center;
+    text-align: justify;
+    padding: 20px;
+    font-size: 1rem;
+    font-weight: 400;
+}
+/* FIM FALL */
+
+
+
+
+/* INICIO WINTER */
+.season-winter {
+    display: inline-block;
+    margin: 0px auto;
+    background-color: rgb(128, 128, 196);
+}
+
+.winter-title {
+    padding: 5px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+
+}
+.winter-title h2 {
+    font-size: 3rem;
+    font-family: cursive;
+}
+
+.winter-title p {
+    font-size: 1.5rem;
+    text-align: center;
+}
+.winter-content {
+    display: grid;
+    padding: 20px;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(200, 200, 240);
+}
+
+.winter-content img {
+    padding: 30px;
+    max-width: 100%;
+}
+
+.winter-text p {
+    color: #020101;
+    justify-content: center;
+    text-align: justify;
+    padding: 20px;
+    font-size: 1rem;
+    font-weight: 400;
+}
+/* FIM WINTER */
+
+
+
+
+
+/* INICIO SPRING */
+.season-spring {
+    display: inline-block;
+    margin: 10px auto;
+    background-color:  rgb(48, 161, 48);
+}
+
+.spring-title {
+    padding: 25px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+
+}
+.spring-title h2 {
+    font-size: 3rem;
+    font-family: cursive;
+}
+
+.spring-title p {
+    font-size: 1.5rem;
+    text-align: center;
+}
+.spring-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(195, 230, 144)
+}
+
+.spring-content img {
+    padding: 30px;
+    max-width: 100%;
+}
+
+.spring-text p {
+    color: #020101;
+    justify-content: center;
+    text-align: justify;
+    padding: 20px;
+    font-size: 1rem;
+    font-weight: 400;
+}
+/* FIM SPRING */
+
+
+/* 
+x-x-x-x-x- Rascunho x-x-x-x-x-
+
+.seasons .primavera a:hover::before {
+    width: 100%;
+    height: 100%;
+    border-top: 2px solid #043a02;
+    border-right: 2px solid #005215;
+}
+.seasons .primavera a:hover::after {
+    width: 100%;
+    height: 100%;
+    border-bottom: 2px solid #013b0e;
+    border-left: 2px solid #003b08;
+}
+
+
+.seasons .outono a:hover::before {
+    width: 100%;
+    height: 100%;
+    border-top: 2px solid #e4860a;
+    border-right: 2px solid #e4860a;
+}
+.seasons .outono a:hover::after {
+    width: 100%;
+    height: 100%;
+    border-bottom: 2px solid #e4860a;
+    border-left: 2px solid #e4860a;
+}
+
+.seasons .inverno a:hover::before {
+    width: 100%;
+    height: 100%;
+    border-top: 2px solid #4812df;
+    border-right: 2px solid #4812df;
+}
+.seasons .inverno a:hover::after {
+    width: 100%;
+    height: 100%;
+    border-bottom: 2px solid #4812df;
+    border-left: 2px solid #4812df;
+}
+
+.seasons .verao a:hover::before {
+    width: 100%;
+    height: 100%;
+    border-top: 2px solid #d2e907;
+    border-right: 2px solid #d2e907;
+}
+.seasons .verao a:hover::after {
+    width: 100%;
+    height: 100%;
+    border-bottom: 2px solid #d2e907;
+    border-left: 2px solid #d2e907;
+}
+////////////////////////////////////////////////
+circles
+
+/*.name .circles {
+    display: flex;
+    gap: 35px;
+    justify-content: center;
+}
+
+.circles span {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: #fff;
+    border-radius: 50%;
+    
+} 
+*/
+
+
+
+
+
